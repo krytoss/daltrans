@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>Daltrans - @yield('title')</title>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+	<!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/fa.min.css') }}"> -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
-<body>
+<body id="home">
 
 	<div class="loading">
 		<svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -37,18 +38,18 @@
 				</div>
 
 				<div class="col col-md-9">
-					<ul id="main-nav" class="vertical-nav">
+					<ul id="main-nav" class="nav vertical-nav">
 						<li>
-							<a href="#" class="active">Domov</a>
+							<a href="#home" class="anchor active quote-section icons">Domov</a>
 						</li>
 						<li>
-							<a href="#">bla bla</a>
+							<a href="#about" class="anchor about">O firme</a>
 						</li>
 						<li>
-							<a href="#">bla bla</a>
+							<a href="#services" class="anchor services">Služby</a>
 						</li>
 						<li>
-							<a href="#">bla bla</a>
+							<a href="#contact" class="anchor contact map">Kontakt</a>
 						</li>
 					</ul>
 				</div>
@@ -57,17 +58,37 @@
 
 		</div>
 
-		<div id="slider">
-			
-			<div class="slide slide-fade">
-				<img src="{{ asset('img/header01.jpg') }}">
-			</div>
-			<div class="slide slide-fade">
-				<img src="{{ asset('img/header02.jpg') }}">
+		<div id="slider" class="carousel slide" data-ride="carousel">
+
+			<ol class="carousel-indicators">
+			    <li data-target="#slider" data-slide-to="0" class="active"></li>
+			    <li data-target="#slider" data-slide-to="1"></li>
+			 </ol>
+
+			<div class="carousel-inner">
+				
+				<div class="item active">
+					<img src="{{ asset('img/header01.jpg') }}">
+					<div class="carousel-caption">
+				        <h3>Nadpis</h3>
+				        <p>Nejaký popis</p>
+				    </div>
+				</div>
+
+				<div class="item">
+					<img src="{{ asset('img/header02.jpg') }}">
+				</div>
+
 			</div>
 
-			<a class="arrow arrow-left">&#10094;</a>
-			<a class="arrow arrow-right">&#10095;</a>
+			<a class="arrow arrow-left carousel-control" href="#slider" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+		    	<span class="sr-only">Previous</span>
+			</a>
+			<a class="arrow arrow-right carousel-control" href="#slider" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+		    	<span class="sr-only">Next</span>
+			</a>
 
 		</div>
 
@@ -79,11 +100,49 @@
 
 	</main>
 
-	<footer>
+	<footer id="main-footer">
 		
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-3">
+					<img src="{{ asset('img/logo.png') }}" style="width:100%;opacity:.9;">
+				</div>
+				<div class="col col-md-3 col-md-offset-2">
+					<h3>Navigácia</h3>
+					<ul class="nav">
+						<li>Bla</li>
+						<li>Bla</li>
+						<li>Bla</li>
+						<li>Bla</li>
+					</ul>
+				</div>
+				<div id="footer-contact" class="col col-md-4">
+					<h3>Kontakt</h3>
+					<ul class="nav">
+						<li><i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a></li>
+						<li><i class="fas fa-envelope"></i>Email: <a href="mailto:a@a.a">email@daltrans.sk</a></li>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>Hlavná 45/26
+							<br><i></i>966 53 Hronský Beňadik
+							<br><i></i>Slovensko
+						</li>
+						<li><div class="spacer"></div></li>
+						<li>
+							<strong>IČO:</strong> 52157024
+						</li>
+						<li>
+							<strong>DIČ:</strong> 52157024
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 	</footer>
 
-	<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+	<script src="https://kit.fontawesome.com/8d80d3b633.js"></script>
 </body>
 </html>
