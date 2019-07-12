@@ -40,6 +40,8 @@ $(window).scroll(function() {
 $(document).ready(function(){
 	$(".loading").fadeOut();
 
+	$('#errorModal').modal('show');
+
 	function isElementInViewport(elem) {
         var $elem = $(elem);
 

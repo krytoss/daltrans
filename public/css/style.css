@@ -29,6 +29,33 @@ h3.subtitle {
 	font-size: 20px;
 }
 
+.mobile-nav {
+	display: none;
+}
+
+.navbar {
+	width: 100%;
+	padding: 0;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.nav-wrapper {
+	width: 100%;
+}
+
+.nav li {
+	width: 100%;
+	display: block;
+}
+
+#main-nav li {
+	width: auto;
+}
+
 .nav>li>a {
 	padding: 0;
 	display: inline-block;
@@ -135,12 +162,12 @@ h3.subtitle {
 	overflow: hidden;
 }
 
-#slider .item {
+#slider .carousel-item {
 	width: 100%;
 	height: inherit;
 }
 
-#slider .item img {
+#slider .carousel-item img {
 	width: 100%;
 	height: 700px;
 	object-fit: cover;
@@ -206,8 +233,7 @@ main {
 	width: 100%;
 }
 
-.section,
-footer {
+.section {
 	padding: 60px 0;
 }
 
@@ -248,6 +274,7 @@ footer {
 }
 
 footer {
+	padding-top: 60px;
 	background-color: #16354e;
 	/*color: #d8d8d8;*/
 	color: #9bb3c7;
@@ -272,6 +299,17 @@ footer a.active {
 	text-decoration: none;
 }
 
+footer .copyright {
+	background: #0b2a40;
+	margin-top: 50px;
+	padding: 20px 0;
+}
+
+footer .copyright p {
+	margin: 0;
+}
+
+#contact i,
 #footer-contact i {
 	color: #1874c1;
 	display: inline-block;
@@ -292,6 +330,74 @@ section#map .mapouter {
 
 section#map .mapouter:hover {
 	opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+
+	#slider {
+		height: 400px;
+	}
+
+	#slider .item img {
+		height: 400px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	body {
+		padding-top: 80px;
+	}
+
+	#header-top,
+	#header-top.sticky {
+		overflow: visible;
+		width: 100%;
+		top: 0;
+		left: 0;
+		transform: translateX(0);
+		height: auto;
+		padding: 0 25px;
+		background: rgba(255, 255, 255, 1);
+	}
+
+	#main-nav {
+		float: none;
+	}
+
+	#main-nav li {
+		width: 100%;
+	}
+
+	#main-nav li a {
+		padding: 5px;
+	}
+
+	.mobile-spacer {
+		display: block;
+		width: 100%;
+		height: 20px;
+	}
+  
+	#icons i.fas {
+		font-size: 2em;
+	}
+
+	.spacer {
+		height: 0;
+	}
+
+	#icons p {
+		font-size: 12px;
+	}
+
+	input {
+		margin: 2px 0;
+	}
+
 }
 
 

@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Daltrans - @yield('title')</title>
-	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 	<!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/fa.min.css') }}"> -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="home">
 
@@ -27,32 +28,66 @@
 		</svg>
 	</div>
 
+	@if ($errors->any())
+						<div id="errorModal" class="modal" tabindex="-1" role="dialog">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-body">
+						        
+							    <div class="alert alert-danger">
+							        <ul>
+
+							            @foreach ($errors->all() as $error)
+							                <li>{{ $error }}</li>
+							            @endforeach
+							        </ul>
+							    </div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					@endif
+
 	<header>
 		
-		<div id="header-top">
+		<div id="header-top" class="container-fluid">
 
 			<div class="row" style="height: inherit;">
 				
-				<div class="col col-md-3">
-					<img src="{{ asset('img/logo.png') }}" id="logo">
-				</div>
+				<nav class="navbar navbar-expand-md navbar-light">
 
-				<div class="col col-md-9">
-					<ul id="main-nav" class="nav vertical-nav">
-						<li>
-							<a href="#home" class="anchor active quote-section icons">Domov</a>
-						</li>
-						<li>
-							<a href="#about" class="anchor about">O firme</a>
-						</li>
-						<li>
-							<a href="#services" class="anchor services">Služby</a>
-						</li>
-						<li>
-							<a href="#contact" class="anchor contact map">Kontakt</a>
-						</li>
-					</ul>
-				</div>
+					<a class="navbar-brand" href="#">
+						<img src="{{ asset('img/logo.png') }}" id="logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="pull-right">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+
+						<div class="nav-wrapper">
+							<ul id="main-nav" class="nav vertical-nav">
+								<li>
+									<a href="#home" class="anchor active quote-section icons">Domov</a>
+								</li>
+								<li>
+									<a href="#about" class="anchor about">O firme</a>
+								</li>
+								<li>
+									<a href="#services" class="anchor services">Služby</a>
+								</li>
+								<li>
+									<a href="#contact" class="anchor contact map">Kontakt</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</nav>
 
 			</div>
 
@@ -60,14 +95,14 @@
 
 		<div id="slider" class="carousel slide" data-ride="carousel">
 
-			<ol class="carousel-indicators">
+			<ul class="carousel-indicators">
 			    <li data-target="#slider" data-slide-to="0" class="active"></li>
 			    <li data-target="#slider" data-slide-to="1"></li>
-			 </ol>
+			 </ul>
 
 			<div class="carousel-inner">
 				
-				<div class="item active">
+				<div class="carousel-item active">
 					<img src="{{ asset('img/header01.jpg') }}">
 					<div class="carousel-caption">
 				        <h3>Nadpis</h3>
@@ -75,18 +110,18 @@
 				    </div>
 				</div>
 
-				<div class="item">
+				<div class="carousel-item">
 					<img src="{{ asset('img/header02.jpg') }}">
 				</div>
 
 			</div>
 
-			<a class="arrow arrow-left carousel-control" href="#slider" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
+			<a class="arrow arrow-left carousel-control-prev" href="#slider" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
 		    	<span class="sr-only">Previous</span>
 			</a>
-			<a class="arrow arrow-right carousel-control" href="#slider" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
+			<a class="arrow arrow-right carousel-control-next" href="#slider" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
 		    	<span class="sr-only">Next</span>
 			</a>
 
@@ -104,19 +139,19 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col col-md-3">
+				<div class="col col-md-3 col-12">
 					<img src="{{ asset('img/logo.png') }}" style="width:100%;opacity:.9;">
 				</div>
-				<div class="col col-md-3 col-md-offset-2">
+				<div class="col col-md-3 offset-md-2 offset-0 col-6">
 					<h3>Navigácia</h3>
 					<ul class="nav">
-						<li>Bla</li>
-						<li>Bla</li>
-						<li>Bla</li>
-						<li>Bla</li>
+						<li><a href="#home" class="anchor">Domov</a></li>
+						<li><a href="#about" class="anchor">O firme</a></li>
+						<li><a href="#services" class="anchor">Služby</a></li>
+						<li><a href="#contact" class="anchor">Kontakt</a></li>
 					</ul>
 				</div>
-				<div id="footer-contact" class="col col-md-4">
+				<div id="footer-contact" class="col col-md-4 col-6">
 					<h3>Kontakt</h3>
 					<ul class="nav">
 						<li><i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a></li>
@@ -138,10 +173,21 @@
 			</div>
 		</div>
 
+			<div class="row copyright">
+				<div class="col col-md-12">
+					<p class="text-center">
+						© 2019 Všetky práva vyhradené
+					</p>
+					<p class="text-center">
+						Autor | Ľudovít Kopcsányi
+					</p>
+				</div>
+			</div>
+
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 	<script src="https://kit.fontawesome.com/8d80d3b633.js"></script>
 </body>
