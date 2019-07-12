@@ -112,7 +112,7 @@ h3.subtitle {
 	height: 80px;
 	background: #fff;
 	border-radius: 3px;
-	z-index: 1;
+	z-index: 50;
 	-webkit-box-shadow: 0px -7px 0px 0px rgba(255,255,255,0.25);
 	-moz-box-shadow: 0px -7px 0px 0px rgba(255,255,255,0.25);
 	box-shadow: 0px -7px 0px 0px rgba(255,255,255,0.25);
@@ -340,7 +340,7 @@ section#map .mapouter:hover {
 		height: 400px;
 	}
 
-	#slider .item img {
+	#slider .carousel-item img {
 		height: 400px;
 	}
 
@@ -361,7 +361,7 @@ section#map .mapouter:hover {
 		transform: translateX(0);
 		height: auto;
 		padding: 0 25px;
-		background: rgba(255, 255, 255, 1);
+		background-color: #343a40;
 	}
 
 	#main-nav {
@@ -373,7 +373,13 @@ section#map .mapouter:hover {
 	}
 
 	#main-nav li a {
+		color: #fff;
 		padding: 5px;
+	}
+
+	#main-nav li a:hover, 
+	#main-nav li a.active {
+		color: #fff;
 	}
 
 	.mobile-spacer {
@@ -396,6 +402,22 @@ section#map .mapouter:hover {
 
 	input {
 		margin: 2px 0;
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+	#slider {
+		height: 300px;
+	}
+
+	#slider .carousel-item img {
+		height: 300px;
+	}
+
+	#footer-nav {
+		display: none;
 	}
 
 }

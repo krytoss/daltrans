@@ -57,7 +57,7 @@
 
 			<div class="row" style="height: inherit;">
 				
-				<nav class="navbar navbar-expand-md navbar-light">
+				<nav class="navbar navbar-expand-md navbar-dark">
 
 					<a class="navbar-brand" href="#">
 						<img src="{{ asset('img/logo.png') }}" id="logo">
@@ -142,7 +142,7 @@
 				<div class="col col-md-3 col-12">
 					<img src="{{ asset('img/logo.png') }}" style="width:100%;opacity:.9;">
 				</div>
-				<div class="col col-md-3 offset-md-2 offset-0 col-6">
+				<div id="footer-nav" class="col col-md-3 offset-md-2 offset-0 col-6">
 					<h3>Navigácia</h3>
 					<ul class="nav">
 						<li><a href="#home" class="anchor">Domov</a></li>
@@ -151,7 +151,7 @@
 						<li><a href="#contact" class="anchor">Kontakt</a></li>
 					</ul>
 				</div>
-				<div id="footer-contact" class="col col-md-4 col-6">
+				<div id="footer-contact" class="col col-md-4 col-sm-6 col-12">
 					<h3>Kontakt</h3>
 					<ul class="nav">
 						<li><i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a></li>

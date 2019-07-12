@@ -277,6 +277,8 @@
 							</li>
 					</ul>
 				</div>
+				<div class="mobile-spacer"></div>
+				<div class="mobile-spacer"></div>
 				<div class="col col-md-6 col-12">
 					<form method="post" action="sendContactForm">
 						{{ csrf_field() }}
