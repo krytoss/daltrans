@@ -171,7 +171,6 @@
 					</ul>
 				</div>
 			</div>
-		</div>
 
 			<div class="row copyright">
 				<div class="col col-md-12">
@@ -183,6 +182,8 @@
 					</p>
 				</div>
 			</div>
+			
+		</div>
 
 	</footer>
 
