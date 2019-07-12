@@ -53,25 +53,37 @@
 
 			<div class="row small-images">
 				<div class="col col-md-4 col-12">
-					<img src="{{ asset('img/driver-ready.jpg') }}" class="img-cover small-img">
-					<h3>Váš tovar, naša cesta</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
-					</p>
+					<div class="inside-column">
+						<img src="{{ asset('img/driver-ready.jpg') }}" class="img-cover small-img">
+						<div class="text">
+							<h3>Váš tovar, naša cesta</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+							</p>
+						</div>
+					</div>
 				</div>
 				<div class="col col-md-4 col-12">
-					<img src="{{ asset('img/kamion.jpg') }}" class="img-cover small-img">
-					<h3>Lorem ipsum</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
-					</p>
+					<div class="inside-column">
+						<img src="{{ asset('img/kamion.jpg') }}" class="img-cover small-img">
+						<div class="text">
+							<h3>Váš tovar, naša cesta</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+							</p>
+						</div>
+					</div>
 				</div>
 				<div class="col col-md-4 col-12">
-					<img src="{{ asset('img/trucks.jpg') }}" class="img-cover small-img">
-					<h3>Lorem ipsum</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
-					</p>
+					<div class="inside-column">
+						<img src="{{ asset('img/trucks.jpg') }}" class="img-cover small-img">
+						<div class="text">
+							<h3>Váš tovar, naša cesta</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
