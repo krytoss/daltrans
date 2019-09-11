@@ -12,7 +12,9 @@
 <body id="home">
 
 	<div class="loading">
-		<svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+  <div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+		<!-- <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 			<path fill="#adadad" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
 			  c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
 			<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
@@ -25,8 +27,8 @@
 			  L82,35.7z">
 			<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
 			</path>
-		</svg>
-	</div>
+		</svg> -->
+	</div> 
 
 	@if ($errors->any())
 						<div id="errorModal" class="modal" tabindex="-1" role="dialog">
@@ -105,8 +107,7 @@
 				<div class="carousel-item active">
 					<img src="{{ asset('img/header01.jpg') }}">
 					<div class="carousel-caption">
-				        <h3>Nadpis</h3>
-				        <p>Nejaký popis</p>
+				        <h3>Váš tovar, naša cesta</h3>
 				    </div>
 				</div>
 
@@ -155,7 +156,7 @@
 					<h3>Kontakt</h3>
 					<ul class="nav">
 						<li><i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a></li>
-						<li><i class="fas fa-envelope"></i>Email: <a href="mailto:a@a.a">email@daltrans.sk</a></li>
+						<li><i class="fas fa-envelope"></i>Email: <a href="mailto:a@a.a">logistika@daltrans.sk</a></li>
 						<li>
 							<i class="fas fa-map-marker-alt"></i>Hlavná 45/26
 							<br><i></i>966 53 Hronský Beňadik
@@ -166,23 +167,30 @@
 							<strong>IČO:</strong> 52157024
 						</li>
 						<li>
-							<strong>DIČ:</strong> 52157024
+							<strong>DIČ:</strong> 2120916457
+						</li>
+						<li>
+							<strong>IČ DPH:</strong> SK2120916457
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="row copyright">
-				<div class="col col-md-12">
-					<p class="text-center">
-						© 2019 Všetky práva vyhradené
-					</p>
-					<p class="text-center">
-						Autor | Ľudovít Kopcsányi
-					</p>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-12">
+						<p class="text-center">
+							© 2019 Všetky práva vyhradené
+						</p>
+						<p class="text-center">
+							Autor | Ľudovít Kopcsányi
+						</p>
+					</div>
 				</div>
 			</div>
-			
 		</div>
 
 	</footer>

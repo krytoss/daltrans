@@ -38,7 +38,6 @@ $(window).scroll(function() {
 })
 
 $(document).ready(function(){
-	$(".loading").fadeOut();
 
 	$('#errorModal').modal('show');
 
@@ -95,3 +94,9 @@ $(document).ready(function(){
         assignActiveClassToNav();
     });
 })
+
+$(window).on('load', function(){
+    $(".loading").fadeOut().done(function() {
+        $(".loading").remove();
+    });
+});

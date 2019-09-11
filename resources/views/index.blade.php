@@ -56,9 +56,9 @@
 					<div class="inside-column">
 						<img src="{{ asset('img/driver-ready.jpg') }}" class="img-cover small-img">
 						<div class="text">
-							<h3>Váš tovar, naša cesta</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+								Naši zamestnanci sú profesionáli  s dlhoročnými skúsenosťami vo svojom obore. Snažíme sa vyhovieť náročným požiadavkám našich klientov  a vždy zabezpečiť hladký priebeh transportu. 
+								Máme radi moderné a inovatívne riešenia, konáme rýchlo a zodpovedne.
 							</p>
 						</div>
 					</div>
@@ -67,9 +67,8 @@
 					<div class="inside-column">
 						<img src="{{ asset('img/kamion.jpg') }}" class="img-cover small-img">
 						<div class="text">
-							<h3>Váš tovar, naša cesta</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+								Sme špedičná firma ktorá  sa zaoberá expresnou prepravou tovaru na všetkých typoch vozidiel po celom svete. Ponúkame komplexné portfólio celosvetových prepravných  a logistických služieb.
 							</p>
 						</div>
 					</div>
@@ -78,9 +77,8 @@
 					<div class="inside-column">
 						<img src="{{ asset('img/trucks.jpg') }}" class="img-cover small-img">
 						<div class="text">
-							<h3>Váš tovar, naša cesta</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas ut, posuere sed, felis.
+								Našim cieľom je  Vaša spokojnosť.
 							</p>
 						</div>
 					</div>
@@ -151,15 +149,29 @@
 			<div class="row">
 				<div class="col col-md-8 col-12">
 					<p>
-						Sme špedičná firma ktorá  sa zaoberá expresnou prepravou tovaru na všetkých typoch vozidiel po celom svete. Ponúkame komplexné portfólio celosvetových prepravných  a logistických služieb.
+						Firma DALTRANS, s.r.o vznikla spojením ľudí s dlhoročnými skúsenosťami v odbore dopravy, zasielateľstva a logistiky. Zamestnáva vysokokvalifikovaných zamestnancov z viacjazyčnou dispozíciou a výbornými znalosťami v prepravnom sektore. 
 					</p>
+					
 					<p>
-						Naši zamestnanci sú profesionáli  s dlhoročnými skúsenosťami vo svojom obore. Snažíme sa vyhovieť náročným požiadavkám našich klientov  a vždy zabezpečiť hladký priebeh transportu. 
-						Máme radi moderné a inovatívne riešenia, konáme rýchlo a zodpovedne.
+						Našim cieľom je byť Vašim spoľahlivým partnerom na vysokej kvalitatívnej úrovni pre dlhodobú a perspektívnu spoluprácu. Pri našej práci je na prvom mieste flexibilita, individuálny prístup, spoľahlivosť a precíznosť. 
 					</p>
+					
 					<p>
-						Našim cieľom je  Vaša spokojnosť.
+						Špecializujeme sa na vnútroštátnu a medzinárodnú cestnú prepravu, expresnú prepravu, prepravu nebezpečného ADR tovaru a tak isto aj preprave odpadov. Neexistuje krajina, na ktorú by sme si netrúfli aj keď to pre nás niekedy predstavuje veľkú výzvu. Vždy sa ale snažíme splniť aj tie najnáročnejšie požiadavky našich klientov. To je presne to, čo nás na tejto práci baví. 
 					</p>
+					
+					<p>
+						Účelom firmy je pomáhať našim klientom zabezpečiť prepravu svojho tovaru z miesta určenia do miesta doručenia podľa ich požiadaviek a hľadať optimálne riešenia prepravných, cenových a relačných podmienok. 
+					</p>
+					
+					<p>
+						Našim cieľom je udržať a neustále budovať status úspešnej, silnej a platby schopnej spoločnosti. Stať sa vyhľadávanou, uznávanou špedičnou spoločnosťou. Dosahovať stále vyššiu kvalitu a konkurencieschopnosť našich poskytovaných špedičných služieb. 
+					</p>
+					
+					<p>
+						Máme vytvorenú rozsiahlu sieť overených dopravcov, s ktorými pravidelne spolupracujeme.
+					</p>
+
 				</div>
 				<div class="col col-md-4 col-12">
 					<img src="{{ asset('img/trucks.jpg') }}" class="img-cover">
@@ -211,7 +223,7 @@
 					<form method="post" action="sendQueryForm">
 						{{ csrf_field() }}
 						<div class="row text-center">
-							<div class="col col-md-4 col-md-offset-2 col-12 col-offset-0">
+							<div class="col col-md-4 offset-md-2 col-12">
 								<div class="form-check form-check-inline">
 								 	<input class="form-check-input" type="radio" name="type" id="standard" value="standard">
 								 	<label class="form-check-label" for="standard">Bežná preprava</label>
@@ -272,7 +284,7 @@
 							</li>
 							<li><div class="spacer"></div></li>
 							<li>
-								<i class="fas fa-envelope"></i>Email: <a href="mailto:a@a.a">email@daltrans.sk</a>
+								<i class="fas fa-envelope"></i>Email: <a href="mailto:logistika@daltrans.sk">logistika@daltrans.sk</a>
 							</li>
 							<li><div class="spacer"></div></li>
 							<li>
@@ -285,7 +297,10 @@
 								<strong>IČO:</strong> 52157024
 							</li>
 							<li>
-								<strong>DIČ:</strong> 52157024
+								<strong>DIČ:</strong> 2120916457
+							</li>
+							<li>
+								<strong>IČ DPH:</strong> SK2120916457
 							</li>
 					</ul>
 				</div>
