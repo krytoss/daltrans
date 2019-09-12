@@ -347,7 +347,7 @@
 	</section>
 
 	<section id="map">
-		<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Hlavn%C3%A1%2045%2F26%20966%2053%20Hronsk%C3%BD%20Be%C5%88adik&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div>
+		<div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1thUasvKn8OwFurUyov_O9jC-Zk3dy_3Z" width="100%" height="350"></iframe></div><style>.mapouter{position:relative;text-align:right;height:350px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:100%;}</style></div>
 	</section>
 
 @endsection

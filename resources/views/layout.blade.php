@@ -196,6 +196,8 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script type="text/javascript" 
+           src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 	<script src="https://kit.fontawesome.com/8d80d3b633.js"></script>
