@@ -155,7 +155,12 @@
 				<div id="footer-contact" class="col col-md-4 col-sm-6 col-12">
 					<h3>Kontakt</h3>
 					<ul class="nav">
-						<li><i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a></li>
+						<li>
+							<i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421910100928">+421 910 100 928</a>
+						</li>
+						<li>
+							<i></i><span style="visibility: hidden;">Telefón: </span><a href="tel:+421944281940">+421 944 281 940</a>
+						</li>
 						<li><i class="fas fa-envelope"></i>Email: <a href="mailto:a@a.a">logistika@daltrans.sk</a></li>
 						<li>
 							<i class="fas fa-map-marker-alt"></i>Hlavná 45/26

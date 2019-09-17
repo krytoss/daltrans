@@ -280,7 +280,10 @@
 				<div class="col col-md-6 col-12">
 					<ul class="nav">
 							<li>
-								<i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421999999999">+421 999 999 999</a>
+								<i class="fas fa-mobile-alt"></i>Telefón: <a href="tel:+421910100928">+421 910 100 928</a>
+							</li>
+							<li>
+								<i></i><span style="visibility: hidden;">Telefón: </span><a href="tel:+421944281940">+421 944 281 940</a>
 							</li>
 							<li><div class="spacer"></div></li>
 							<li>
