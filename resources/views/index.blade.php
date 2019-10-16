@@ -171,6 +171,9 @@
 					<p>
 						Máme vytvorenú rozsiahlu sieť overených dopravcov, s ktorými pravidelne spolupracujeme.
 					</p>
+					<p>
+						Zapísaný v: Obchodný register Okresného súdu Banská Bystrica, oddiel: Sro, vložka č. 35819/S
+					</p>
 
 				</div>
 				<div class="col col-md-4 col-12">

@@ -113,6 +113,9 @@
 
 				<div class="carousel-item">
 					<img src="{{ asset('img/header02.jpg') }}">
+					<div class="carousel-caption">
+				        <h3>Váš tovar, naša cesta</h3>
+				    </div>
 				</div>
 
 			</div>
